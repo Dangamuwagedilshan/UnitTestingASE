@@ -6,6 +6,7 @@ public class Refelction01 {
 		// get all simple class values print it out.
 		Simple s = new Simple();
 		System.out.println("Output:"+s);
+		
 
 	}
 

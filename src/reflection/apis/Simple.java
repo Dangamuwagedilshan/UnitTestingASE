@@ -1,11 +1,15 @@
 package reflection.apis;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Simple {
 
 	public String firstName = "Adeesha";
 	public String lastName = "Dangamuwage";
 	public String fullName;
 	private int age = 24;
+	
 
 	public Simple() {
 	}
@@ -14,7 +18,7 @@ public class Simple {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.fullName = fullName;
-		this.age = age;
+		this.age = age;	
 	}
 
 	public void fullName() {
@@ -56,8 +60,10 @@ public class Simple {
 	public void setAge(int age) {
 		this.age = age;
 	}
-
+	
 	public String toString() {
 		return String.format("(firstName:%s, lastName:%s, Age:%d)", firstName, lastName,age);
 	}
+	
+	
 }
