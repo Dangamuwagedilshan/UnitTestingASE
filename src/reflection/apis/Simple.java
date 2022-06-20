@@ -5,64 +5,62 @@ import java.util.List;
 
 public class Simple {
 
-	public String firstName = "Adeesha";
-	public String lastName = "Dangamuwage";
-	public String fullName;
-	private int age = 24;
+	public double InitialSalary = 88000.00;
+	public double Incentive = 10000.00;
+	public double Allowance = 4500.00;
+	public double fullSalary;
 	
 
 	public Simple() {
 	}
 
-	public Simple(String firstName, String lastName, String fullName, int age) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.fullName = fullName;
-		this.age = age;	
+	public Simple(double InitialSalary,double Incentive, double Allowance, double fullSalary) {
+		this.InitialSalary = InitialSalary;
+		this.Incentive = Incentive;
+		this.Allowance = Allowance;
+		this.fullSalary = fullSalary;	
 	}
 
-	public void fullName() {
-		this.fullName = firstName + " " + lastName;
+	public void finalFullSalary() {
+		this.fullSalary = InitialSalary+Incentive+Allowance;
 	}
 
-	public void age5YearsBack() {
-		this.age -= 5;
+	public double getInitialSalary() {
+		return InitialSalary;
 	}
 
-	public String getFirstName() {
-		return firstName;
+	public void setInitialSalary(double initialSalary) {
+		InitialSalary = initialSalary;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public double getIncentive() {
+		return Incentive;
 	}
 
-	public String getLastName() {
-		return lastName;
+	public void setIncentive(double incentive) {
+		Incentive = incentive;
 	}
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public double getAllowance() {
+		return Allowance;
 	}
 
-	public String getFullName() {
-		return fullName;
+	public void setAllowance(double allowance) {
+		Allowance = allowance;
 	}
 
-	public void setFullName(String fullName) {
-		this.fullName = fullName;
+	public double getFullSalary() {
+		return fullSalary;
 	}
 
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
+	public void setFullSalary(double fullSalary) {
+		this.fullSalary = fullSalary;
 	}
 	
+	
+
 	public String toString() {
-		return String.format("(firstName:%s, lastName:%s, Age:%d)", firstName, lastName,age);
+		return String.format("(Initial Salary:%.2f, Incentive:%.2f, Allowance:%.2f)", InitialSalary, Incentive,Allowance);
 	}
 	
 	
