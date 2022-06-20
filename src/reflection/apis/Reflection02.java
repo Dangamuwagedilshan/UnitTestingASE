@@ -6,9 +6,9 @@ public class Reflection02 {
 		// TODO Auto-generated method stub
 		Simple s = new Simple();
 		
-		s.fullName();
+		s.finalFullSalary();
 		
-		System.out.println("Fullname: "+s.fullName);
+		System.out.println("Salary Details: "+s);
 	}
 
 }
