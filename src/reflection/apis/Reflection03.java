@@ -8,3 +8,4 @@ public class Reflection03 {
 		System.out.println("Class Name ="+s.getClass().getName());
 	}
 }
+ 
