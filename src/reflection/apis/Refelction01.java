@@ -5,7 +5,7 @@ public class Refelction01 {
 	public static void main(String[] args) {
 		// get all simple class values print it out.
 		Simple s = new Simple();
-		System.out.println("Output:"+s);
+		System.out.println("Outputs:"+s);
 		
 
 	}
